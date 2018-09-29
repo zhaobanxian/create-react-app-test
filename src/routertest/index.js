@@ -14,7 +14,7 @@ export default class Index extends React.Component {
             <ul className="set_ul">
                 <li><a href="https://github.com/zhaobanxian/create-react-app-test">create-react-app-test</a></li>
                 <li><a href="">新浪</a></li>
-            </ul>
+            </ul> 
         </div>
         
         return domitem;
