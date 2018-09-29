@@ -15,8 +15,8 @@ export default class Index extends React.Component {
                 <li><a href="https://github.com/zhaobanxian/create-react-app-test">create-react-app-test</a></li>
                 <li><a href="">新浪</a></li>
             </ul> 
-        </div>
-        
+        </div>  
+        //默认密码
         return domitem;
     }
 }
