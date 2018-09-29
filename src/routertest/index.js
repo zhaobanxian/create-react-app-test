@@ -13,14 +13,14 @@ export default class Index extends React.Component {
             <BackHead backurl='/index.html#/'></BackHead>
             <ul className="set_ul">
                 <li><a href="https://github.com/zhaobanxian/create-react-app-test">create-react-app-test</a></li>
-                <li><a href="">新浪</a></li>
+                <li><a href="https://github.com/zhaobanxian">github address</a></li>
+                <li><Link to='/baidu'>baidu</Link></li>
             </ul> 
+            <Route path="/baidu" render="https://www.baidu.com"></Route>
         </div>  
-        //默认密码
+
         return domitem;
     }
 }
-
-
 
 

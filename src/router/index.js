@@ -18,7 +18,7 @@ class Index extends React.Component{
         this.rt=
         <div>
         <div className="m-head" style={st}>导航栏</div>
-        <ul>
+        <ul className="set_ul">
             {this.getlinklist()}
         </ul>
         </div>

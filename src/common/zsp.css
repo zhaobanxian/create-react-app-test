@@ -13,6 +13,24 @@
     list-style-type:none;
 }
 
+.set_ul::after{
+    clear:both;
+    content:"";
+    display:block;
+}
+
 .set_ul>li{
     float:left;
+    text-align: left;
+    width: 100%;
+    line-height: 50px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.set_ul>li a{
+    width:100%;
+    color:#aaa;
+    display:inline-block;
+    text-indent:10px;
 }
