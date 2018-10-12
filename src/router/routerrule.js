@@ -1,7 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route,Redirect,Switch   } from 'react-router-dom';
-import {Index,rt as DDDIV} from "../router/index.js";
+import {Index} from "../router/index.js";
 import listdata from "./routerlistdata.js";
+import {Bundle} from '../router/bundle.js';
+import {RouteList as AntMoibleTestRoute} from "../antmobiletest/routerdata";
+
+const SliderTest = (props) => (
+    <Bundle load={() => import('../antmobiletest/slidertest.js')}>
+        {(TT) => <TT {...props}></TT>}
+    </Bundle >
+)
+
 export default class RouterRule extends React.Component {
     constructor(props){
         super(props);
@@ -19,6 +28,7 @@ export default class RouterRule extends React.Component {
                 <Switch>
                     <Route exact component={Index} path="/"></Route>
                     {this.routerlist}
+                    {AntMoibleTestRoute}
                     <Redirect to="/"></Redirect>
                 </Switch>
                 </div>

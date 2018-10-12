@@ -15,10 +15,11 @@ export default class BackHead extends React.Component {
     backHandler() {
         if (this.props.backurl) {
             window.location=this.props.backurl;
+            //window.event.preventDefault();
         }
         else {
-            //history.back();
-            console.log("缺少参数返回")
+            window.history.back();
+            //console.log("缺少参数返回")
         }
     }
     render() {

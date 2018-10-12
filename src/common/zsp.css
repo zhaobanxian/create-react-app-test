@@ -26,6 +26,7 @@
     line-height: 50px;
     background-color: #fff;
     margin-top: 5px;
+    animation:action_right_to_left 0.6s;
 }
 
 .set_ul>li a{
@@ -33,4 +34,20 @@
     color:#aaa;
     display:inline-block;
     text-indent:10px;
+}
+
+.action_r_to_l{
+    animation:action_right_to_left 0.6s;
+}
+
+@keyframes action_right_to_left{
+    0%{
+        transform:translateX(100%);
+    }
+    10%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
 }
