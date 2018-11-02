@@ -1,11 +1,12 @@
 import React from 'react';
-import { Bundle } from "./bundle.js";
+import { Bundle, BundleHelper } from "./bundle.js";
 
-const App = (props) => (
-    <Bundle load={() => import('../app/App.js')}>
+const App = (props) => {
+    return <Bundle load={() => import('../app/App.js')}>
         {(TT) => <TT {...props}></TT>}
     </Bundle>
-)
+    //return <BundleHelper {...props} address='../app/App.js'></BundleHelper>
+}
 
 const RtIndex = (props) => (
     <Bundle load={() => import('../routertest/index.js')}>
@@ -40,9 +41,9 @@ var RouterListData = [
 ]
 setid(RouterListData);
 
-function setid(dtlist){
-    dtlist.forEach(function(item,index){
-        item.id=index+1;
+function setid(dtlist) {
+    dtlist.forEach(function (item, index) {
+        item.id = index + 1;
     })
 }
 

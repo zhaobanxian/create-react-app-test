@@ -34,10 +34,14 @@ class Bundle extends React.Component {
     }
 }
 
-function BundleHelper(address) {
-    return (props) =>{
-        return <Bundle load={() => import('../routertest/index.js')}>
-            {(TT) => <TT {...props}></TT>}
+
+class BundleHelper extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return <Bundle load={() => import(this.props.address)}>
+            {(TT) => <TT {...this.props}></TT>}
         </Bundle>
     }
 }

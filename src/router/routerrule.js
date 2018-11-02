@@ -30,7 +30,7 @@ export default class RouterRule extends React.Component {
                     {this.routerlist}
                     {AntMoibleTestRoute}
                     <Route componet={Index}></Route>
-                    {/* <Redirect to="/"></Redirect> */}
+                    <Redirect to="/"></Redirect>
                 </Switch>
                 </div>
             </Router>
